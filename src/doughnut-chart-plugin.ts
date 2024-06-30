@@ -1,6 +1,6 @@
 // source: https://stackoverflow.com/a/72784318/6940144
 export default {
-  id: 'custom_canvas_background_color',
+  id: "custom_canvas_background_color",
   afterUpdate: function (chart: any): void {
     const arcs = chart.getDatasetMeta(0).data;
 
@@ -17,7 +17,7 @@ export default {
   afterDraw: (chart: any): void => {
     const { ctx, canvas }: any = chart;
 
-    chart.getDatasetMeta(0).data.forEach((arc) => {
+    chart.getDatasetMeta(0).data.forEach((arc: any) => {
       const startAngle = Math.PI / 2 - arc.startAngle;
       const endAngle = Math.PI / 2 - arc.endAngle;
 
